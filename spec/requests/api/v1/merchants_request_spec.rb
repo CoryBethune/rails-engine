@@ -55,7 +55,7 @@ RSpec.describe 'Merchants API' do
     items = response_body[:data]
 
     expect(response).to be_successful
-    
+
     expect(items.count).to eq(3)
     expect(items[0].count).to eq(3)
     expect(items[0][:attributes].count).to eq(4)
@@ -75,6 +75,9 @@ RSpec.describe 'Merchants API' do
 
       expect(item[:attributes]).to have_key(:unit_price)
       expect(item[:attributes][:unit_price]).to be_an(Float)
+
+      expect(item[:attributes]).to have_key(:merchant_id)
+      expect(item[:attributes][:merchant_id]).to be_an(Integer)
     end
 
   end
