@@ -15,7 +15,7 @@ RSpec.describe 'Merchants API' do
 
     merchants.each do |merchant|
       expect(merchant).to have_key(:id)
-      expect(merchant[:id]).to be_an(Integer)
+      expect(merchant[:id]).to be_an(String)
 
       expect(merchant).to have_key(:type)
       expect(merchant[:type]).to be_an(String)

@@ -102,4 +102,14 @@ RSpec.describe 'Items API' do
     expect(Item.count).to eq(0)
     expect{Item.find(item.id)}.to raise_error(ActiveRecord::RecordNotFound)
   end
+
+  it "updates one item" do
+    item = create(:item)
+
+    expect(Item.count).to eq(1)
+
+    put "/api/v1/items/#{item.id}"
+
+
+  end
 end
