@@ -67,4 +67,16 @@ RSpec.describe 'Items API' do
     expect(item[:attributes]).to have_key(:merchant_id)
     expect(item[:attributes][:merchant_id]).to be_an(Integer)
   end
+
+  xit "creates one item" do
+    id = create(:merchant).id
+    item = create(:item, merchant_id: id)
+
+    expect(item).to be_an(Item)
+
+  end
+
+  xit "deletes one item" do
+
+  end
 end
