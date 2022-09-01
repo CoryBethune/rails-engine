@@ -47,7 +47,7 @@ RSpec.describe 'Merchants API' do
 
   it "gets a merchants items" do
     id = create(:merchant).id
-    item = create(:item, merchant_id: id)
+    create_list(:item, 3, merchant_id: id)
 
     get "/api/v1/merchants/#{id}/items"
 
@@ -55,7 +55,8 @@ RSpec.describe 'Merchants API' do
     items = response_body[:data]
 
     expect(response).to be_successful
-
+    
+    expect(items.count).to eq(3)
     expect(items[0].count).to eq(3)
     expect(items[0][:attributes].count).to eq(4)
 
