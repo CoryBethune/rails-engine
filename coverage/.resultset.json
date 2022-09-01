@@ -266,7 +266,7 @@
         "lines": [
           1,
           1,
-          null,
+          1,
           null,
           null
         ]
@@ -276,8 +276,31 @@
           1,
           null
         ]
+      },
+      "/Users/coryb/Turing/3_Mod/projects/rails-engine/app/serializers/item_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1662011052
+    "timestamp": 1662011378
   }
 }

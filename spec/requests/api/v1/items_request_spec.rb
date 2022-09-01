@@ -31,9 +31,7 @@ RSpec.describe 'Items API' do
       expect(item[:attributes]).to have_key(:unit_price)
       expect(item[:attributes][:unit_price]).to be_an(Float)
     end
-
   end
 
-
-
+  
 end
