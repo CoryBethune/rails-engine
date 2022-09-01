@@ -33,5 +33,16 @@ RSpec.describe 'Items API' do
     end
   end
 
-  
+  it "gets one item" do
+    id = create(:item).id
+
+    get "/api/v1/items/#{id}"
+
+    response_body = JSON.parse(response.body, symbolize_names: true)
+    item = response_body[:data]
+
+    expect(response).to be_successful
+
+
+  end
 end
