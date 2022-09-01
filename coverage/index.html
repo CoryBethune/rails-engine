@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-08-31T22:49:38-07:00">2022-08-31T22:49:38-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-08-31T23:24:31-07:00">2022-08-31T23:24:31-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  100.0%
+  95.71%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.23
+         1.03
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>65</b> relevant lines,
-    <span class="green"><b>65</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
+    <b>70</b> relevant lines,
+    <span class="green"><b>67</b> lines covered</span> and
+    <span class="red"><b>3</b> lines missed. </span>
     (<span class="green">
-  100.0%
+  95.71%
 </span>
 )
   </div>
@@ -72,12 +72,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#bb85285583fdc5e5913610eb56fe3c403ef83dd2" class="src_link" title="app/controllers/api/v1/items_controller.rb">app/controllers/api/v1/items_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="yellow strong cell--number t-file__coverage">83.33 %</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">6</td>
             <td class="cell--number">5</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">0.83</td>
             
           </tr>
         
@@ -127,12 +127,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#890fd653f605eb6297868afc4e2d1b656ada520d" class="src_link" title="app/serializers/item_serializer.rb">app/serializers/item_serializer.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">19</td>
+            <td class="red strong cell--number t-file__coverage">66.67 %</td>
+            <td class="cell--number">33</td>
+            <td class="cell--number">6</td>
             <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.50</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">0.67</td>
             
           </tr>
         
@@ -275,7 +275,7 @@
             <td class="cell--number">6</td>
             <td class="cell--number">6</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.50</td>
+            <td class="cell--number">1.50</td>
             
           </tr>
         
@@ -286,7 +286,7 @@
             <td class="cell--number">3</td>
             <td class="cell--number">3</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.33</td>
             
           </tr>
         
@@ -311,8 +311,8 @@
   <div class="header">
     <h3>app/controllers/api/v1/items_controller.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="yellow">
+  83.33%
 </span>
 
       lines covered
@@ -321,9 +321,9 @@
     
 
     <div class="t-line-summary">
-      <b>3</b> relevant lines.
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>6</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
 
     
@@ -356,8 +356,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="3">
+            
             
 
             
@@ -379,6 +379,61 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def show</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    item = Item.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    render json: ItemSerializer.one_item(item)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
             
             
 
@@ -642,8 +697,8 @@
   <div class="header">
     <h3>app/serializers/item_serializer.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="red">
+  66.67%
 </span>
 
       lines covered
@@ -652,9 +707,9 @@
     
 
     <div class="t-line-summary">
-      <b>4</b> relevant lines.
+      <b>6</b> relevant lines.
       <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
 
     
@@ -698,8 +753,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="4">
+            
             
 
             
@@ -720,8 +775,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="6">
-            <span class="hits">3</span>
+          <li class="missed" data-hits="0" data-linenumber="6">
+            
             
 
             
@@ -863,7 +918,161 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="19">
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.one_item(data)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">    {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      data: {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">        id: data.id.to_s,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">        type: &#39;item&#39;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">        attributes: {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">          name: data.name,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby">          description: data.description,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby">          unit_price: data.unit_price,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby">          merchant_id: data.merchant_id</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby">        }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">      }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">    }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="33">
             
             
 
@@ -3089,7 +3298,7 @@
 
             
 
-            <code class="ruby">      resources :items, only: [:index] </code>
+            <code class="ruby">      resources :items, only: [:index, :show] </code>
           </li>
         </div>
       
@@ -3191,8 +3400,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="4">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="2" data-linenumber="4">
+            <span class="hits">2</span>
             
 
             
@@ -3202,8 +3411,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="5">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="2" data-linenumber="5">
+            <span class="hits">2</span>
             
 
             
@@ -3213,8 +3422,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="6">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="2" data-linenumber="6">
+            <span class="hits">2</span>
             
 
             
@@ -3299,8 +3508,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="3">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="2" data-linenumber="3">
+            <span class="hits">2</span>
             
 
             
