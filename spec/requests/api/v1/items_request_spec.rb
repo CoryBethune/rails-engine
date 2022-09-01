@@ -91,7 +91,15 @@ RSpec.describe 'Items API' do
 
   end
 
-  xit "deletes one item" do
+  it "deletes one item" do
+    item = create(:item)
 
+    expect(Item.count).to eq(1)
+
+    delete "/api/v1/items/#{item.id}"
+
+    expect(response).to be_successful
+    expect(Item.count).to eq(0)
+    expect{Item.find(book.id)}.to raise_error(ActiveRecord::RecordNotFound)
   end
 end
