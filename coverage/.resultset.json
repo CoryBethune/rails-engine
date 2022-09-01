@@ -208,7 +208,7 @@
         "lines": [
           1,
           1,
-          4,
+          5,
           null,
           null
         ]
@@ -245,6 +245,11 @@
           1,
           1,
           null,
+          null,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -253,8 +258,39 @@
           1,
           null
         ]
+      },
+      "/Users/coryb/Turing/3_Mod/projects/rails-engine/app/serializers/merchant_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1661894609
+    "timestamp": 1661991699
   }
 }
