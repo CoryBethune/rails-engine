@@ -133,4 +133,10 @@ RSpec.describe 'Items API' do
     expect(new_item.unit_price).to_not eq(old_unit_price)
     expect(new_item.unit_price).to eq(0.99)
   end
+
+  it "gets the merchant associated with the item" do
+    merchant = create(:merchant)
+    merchant.create(:item)
+    binding.pry
+  end
 end
