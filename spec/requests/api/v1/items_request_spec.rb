@@ -104,23 +104,22 @@ RSpec.describe 'Items API' do
   end
 
   it "updates one item" do
+    merchant_id = create(:merchant).id
     id = create(:item).id
     old_name = Item.last.name
     old_description = Item.last.description
     old_unit_price = Item.last.unit_price
-    old_merchant_id = Item.last.merchant_id
 
     item_params = {
       name: "fork",
       description: 'eat with this utensil.',
-      unit_price: 0.99,
-      merchant_id: 100
+      unit_price: 0.99
     }
     headers = {"CONTENT_TYPE" => "application/json"}
 
     expect(Item.count).to eq(1)
 
-    put "/api/v1/items/#{id}", headers: headers, params: JSON.generate({item: item_params})
+    patch "/api/v1/items/#{id}", headers: headers, params: JSON.generate({item: item_params})
     new_item = Item.find_by(id: id)
 
     expect(response).to be_successful
@@ -133,9 +132,5 @@ RSpec.describe 'Items API' do
 
     expect(new_item.unit_price).to_not eq(old_unit_price)
     expect(new_item.unit_price).to eq(0.99)
-
-    expect(new_item.merchant_id).to_not eq(old_merchant_id)
-    expect(new_item.merchant_id).to eq(100)
-
   end
 end
