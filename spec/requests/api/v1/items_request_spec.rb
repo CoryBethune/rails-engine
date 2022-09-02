@@ -133,4 +133,19 @@ RSpec.describe 'Items API' do
     expect(new_item.unit_price).to_not eq(old_unit_price)
     expect(new_item.unit_price).to eq(0.99)
   end
+
+  it "gets the merchant associated with the item" do
+    merchant = create(:merchant)
+    item = create(:item, merchant_id: merchant.id)
+
+    get "/api/v1/items/#{item.id}/merchant"
+
+    response_body = JSON.parse(response.body, symbolize_names: true)
+    merchant_response = response_body[:data]
+
+    expect(response).to be_successful
+    
+    expect(merchant_response[:id]).to eq(merchant[:id].to_s)
+    expect(merchant_response[:attributes][:name]).to eq(merchant[:name])
+  end
 end
