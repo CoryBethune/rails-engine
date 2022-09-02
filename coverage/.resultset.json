@@ -220,7 +220,7 @@
         "lines": [
           1,
           1,
-          2,
+          3,
           null,
           null
         ]
@@ -241,7 +241,7 @@
           null
         ]
       },
-      "/Users/coryb/Turing/3_Mod/projects/rails-engine/app/models/item.rb": {
+      "/Users/coryb/Turing/3_Mod/projects/rails-engine/app/models/merchant.rb": {
         "lines": [
           1,
           1,
@@ -255,7 +255,7 @@
           null
         ]
       },
-      "/Users/coryb/Turing/3_Mod/projects/rails-engine/app/models/merchant.rb": {
+      "/Users/coryb/Turing/3_Mod/projects/rails-engine/app/models/item.rb": {
         "lines": [
           1,
           1,
@@ -280,14 +280,22 @@
           null,
           null,
           1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
           0,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
           null,
           null
         ]
@@ -297,8 +305,45 @@
           1,
           null
         ]
+      },
+      "/Users/coryb/Turing/3_Mod/projects/rails-engine/app/serializers/item_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1662022255
+    "timestamp": 1662078221
   }
 }
